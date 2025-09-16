@@ -1,0 +1,408 @@
+.cab-coordinator-container {
+  background: #f9fafb;
+  padding: 28px 32px 24px 32px;
+  border-radius: 16px;
+  min-width: 900px;
+  margin: 16px auto;
+  font-family: 'Inter', sans-serif;
+}
+
+.cab-coordinator-main {
+  margin-left: 0;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-section {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.section-label {
+  font-weight: 700;
+  font-size: 16px;
+  color: #111827;
+  margin-bottom: 12px;
+  display: block;
+  text-align: left;
+}
+
+.input-label {
+  font-weight: 700;
+  font-size: 14px;
+  color: #111827;
+  margin-bottom: 8px;
+  display: block;
+  text-align: left;
+}
+
+.bold-label {
+  font-weight: 700 !important;
+  color: #232e3e !important;
+}
+.trip-schedule-label.bold-label {
+  font-weight: 700 !important;
+  color: #232e3e !important;
+}
+
+.required-star {
+  color: #F44336;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 2px;
+}
+
+.custom-radio-row {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-top: 4px;
+}
+
+.booking-details-row,
+.contact-details-row {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 16px;
+  flex-wrap: nowrap;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.booking-col {
+  flex: 1;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.project-input,
+.input-base,
+.cab-timing-input,
+.input-select .MuiSelect-select,
+.input-select .MuiInputBase-input,
+.input-select .MuiOutlinedInput-input,
+.reason-input,
+.comment-input {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+  background: #ffffff;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  padding: 12px 14px;
+  height: 48px;
+  margin-bottom: 0;
+  display: block;
+}
+
+.input-select {
+  background: #ffffff !important;
+  border-radius: 8px !important;
+}
+.input-select .MuiOutlinedInput-notchedOutline {
+  border-color: #E5E7EB !important;
+  border-radius: 8px !important;
+}
+
+.transport-details-row {
+  display: flex;
+  width: 100%;
+  gap: 24px;
+  margin-bottom: 18px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.transport-col {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: none;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-label {
+  font-weight: 700;
+  font-size: 15px;
+  color: #1A253C;
+  margin-bottom: 8px;
+  display: block;
+  text-align: left;
+}
+
+.input-base,
+.project-input {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  background: #ffffff;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 16px 16px;
+  height: 56px;
+  color: #1A253C;
+  outline: none;
+  box-shadow: none;
+  display: block;
+}
+
+.transport-col.trip-schedule-wrapper {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.trip-schedule-label {
+  font-weight: 700;
+  font-size: 15px;
+  color: #1A253C;
+  margin-bottom: 8px;
+  display: block;
+  text-align: left;
+}
+.trip-schedule-row {
+  display: flex;
+  width: 100%;
+  gap: 12px;
+  justify-content: space-between;
+}
+.trip-date-input,
+.trip-time-input {
+  background: #ffffff !important;
+  border: 1px solid #E5E7EB !important;
+  border-radius: 8px !important;
+  font-size: 16px !important;
+  color: #111827 !important;
+  width: 210px !important;
+  height: 53px !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+}
+
+.trip-date-input .MuiInputBase-root,
+.trip-time-input .MuiInputBase-root {
+  border: none;
+  background: transparent;
+}
+.trip-date-input .MuiOutlinedInput-root,
+.trip-time-input .MuiOutlinedInput-root {
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  padding: 0;
+}
+
+.trip-date-input .MuiInputBase-input,
+.trip-time-input .MuiInputBase-input {
+  background: #ffffff !important;
+  color: #1A253C !important;
+  font-size: 16px !important;
+  font-family: 'Inter', sans-serif !important;
+  padding: 1px 16px !important;
+  height: 56px !important;
+  box-shadow: none !important;
+  border-radius: 8 !important;
+  display: flex !important;
+  align-items: center !important;
+}
+.trip-date-input .MuiOutlinedInput-notchedOutline,
+.trip-time-input .MuiOutlinedInput-notchedOutline {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.trip-date-input .MuiSvgIcon-root,
+.trip-time-input .MuiSvgIcon-root {
+  color: #6C768B !important;
+  font-size: 22px !important;
+  margin-right: 8px !important;
+  margin-left: 8px !important;
+  
+}
+.trip-date-input .calendar-icon,
+.trip-time-input .calendar-icon {
+  width: 22px !important;
+  height: 22px !important;
+  filter: grayscale(50%);
+  margin-right: 8px !important;
+  margin-left: 8px !important;
+}
+
+.trip-date-input + .trip-time-input {
+  margin-left: 0 !important;
+}
+
+.reason-input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100px;
+  background: #ffffff;
+  border: 1px solid #D0D5DD;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #111827;
+  padding: 16px;
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+
+.comment-input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100px;
+  background: #ffffff;
+  border: 1px solid #D0D5DD;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #111827;
+  padding: 16px;
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+.comment-input a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.submit-btn-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+  gap: 12px;
+  width: 100%;
+}
+
+.reject-btn {
+  background: #ffffff !important;
+  color: #29ABE2 !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  min-width: 100px !important;
+  height: 40px !important;
+  text-transform: none !important;
+  box-shadow: none !important;
+  border: 1px solid #29ABE2 !important;
+}
+
+.approval-btn {
+  background: #29ABE2 !important;
+  color: #fff !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  min-width: 100px !important;
+  height: 40px !important;
+  text-transform: none !important;
+  box-shadow: none !important;
+}
+
+.transfer-workflow-section {
+  background: #EFF6FF;
+  border-radius: 8px;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 46px;
+  box-sizing: border-box;
+  margin-top: 36px;
+  margin-bottom: 0;
+  position: static;
+}
+
+.transfer-workflow-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.transfer-workflow-icon {
+  width: 22px;
+  height: 22px;
+}
+.transfer-workflow-title {
+  font-weight: 700;
+  font-size: 16px;
+  color: #020202;
+}
+.transfer-arrow-btn,
+.MuiIconButton-root.transfer-arrow-btn {
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  min-width: 0 !important;
+  width: auto !important;
+  height: auto !important;
+  display: inline-flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.transfer-arrow-btn {
+  background: none !important;
+  min-width: 0 !important;
+  margin-left: auto;
+}
+.transfer-arrow-icon {
+  font-size: 22px !important;
+  color: #111827 !important;
+  font-weight: 500 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: none !important;
+}
+.cab-required-row {
+  display: flex;
+  gap: 0;
+}
+
+.cab-date-input,
+.cab-time-input {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.cab-date-input .MuiOutlinedInput-root {
+  border-right: none !important;
+  border-top-left-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+
+.cab-time-input .MuiOutlinedInput-root {
+  border-left: none !important;
+  border-top-right-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.cab-date-input .MuiOutlinedInput-notchedOutline,
+.cab-time-input .MuiOutlinedInput-notchedOutline {
+  border: none !important;
+}
+
+.cab-date-input .MuiInputBase-input,
+.cab-time-input .MuiInputBase-input {
+  background: transparent !important;
+  color: #111827 !important;
+  font-size: 15px !important;
+  padding: 0 16px !important;
+}
+
+.cab-date-icon,
+.cab-time-icon {
+  width: 22px;
+  height: 22px;
+  margin-left: 8px;
+  opacity: 0.7;
+}

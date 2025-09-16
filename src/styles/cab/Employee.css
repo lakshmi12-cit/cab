@@ -1,0 +1,678 @@
+/* --- Note Sections: separate classes and content heights --- */
+
+/* Weekend Note Section */
+.weekend-note-section {
+  position: relative;
+  width: 400px;
+  min-height: 80px;
+  right: -10px;
+}
+.weekend-note-icons {
+  position: absolute;
+  top: -20px;
+  right: -40px;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: flex-end;
+}
+.weekend-note-icon-img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+.weekend-note-content {
+  background-color: #ffffff;
+  border: 1px solid #E5E7EB;
+  box-shadow: 0px 4px 7px rgba(31, 54, 199, 0.06);
+  border-radius: 12px;
+  padding: 24px 32px;
+  margin-top: 5px;
+  width: 100%;
+  min-height: 80px;
+}
+.weekend-note-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+.weekend-close-btn {
+  padding: 0 !important;
+  background: none !important;
+  min-width: 0 !important;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.weekend-close-icon-img {
+  width: 18px;
+  height: 18px;
+}
+.weekend-note-title {
+  font-weight: 700;
+  font-size: 17px;
+  margin-bottom: 0;
+  color: #111827;
+}
+.weekend-note-list {
+  font-size: 14px;
+  line-height: 1.3;
+  color: #606060;
+  margin: 0;
+  padding: 0;
+}
+.weekend-note-list li {
+  margin-bottom: 4px;
+  list-style: disc inside;
+}
+
+/* --- Late Night Note Section --- */
+.late-night-note-section {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  right: 40px;
+}
+.late-night-note-icons {
+  position: absolute;
+  top: -20px;
+  right: -300px;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: flex-end;
+}
+.late-night-note-icon-img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+.late-night-note-content {
+  background-color: #fff;
+  border: 1px solid #E5E7EB;
+  box-shadow: 0px 4px 7px rgba(31, 54, 199, 0.06);
+  border-radius: 12px;
+  padding: 24px 32px;
+  margin-top: 5px;
+  width: 450px !important;
+  height: 510px;
+}
+.late-night-note-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+.late-night-close-btn {
+  padding: 0 !important;
+  background: none !important;
+  min-width: 0 !important;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.late-night-close-icon-img {
+  width: 18px;
+  height: 18px;
+}
+.late-night-note-title {
+  font-weight: 700;
+  font-size: 17px;
+  margin-bottom: 0;
+  color: #111827;
+}
+.late-night-note-list {
+  font-size: 14px;
+  line-height: 1.4 !important;
+  color: #606060;
+  margin: 0;
+  padding: 0;
+}
+.late-night-note-list li {
+  margin-bottom: 4px;
+  list-style: disc inside;
+}
+
+/* --- Adhoc Note Section --- */
+.adhoc-note-section {
+  position: relative;
+  width: 400px;
+  right: -10px;
+}
+.adhoc-note-icons {
+  position: absolute;
+  top: -20px;
+  right: -40px;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  justify-content: flex-end;
+}
+.adhoc-note-icon-img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+.adhoc-note-content {
+  background-color: #fff;
+  border: 1px solid #E5E7EB;
+  box-shadow: 0px 4px 7px rgba(31, 54, 199, 0.06);
+  border-radius: 12px;
+  padding: 24px 32px;
+  margin-top: 5px;
+  width: 100%;
+  height: 400px;
+}
+.adhoc-note-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+.adhoc-close-btn {
+  padding: 0 !important;
+  background: none !important;
+  min-width: 0 !important;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.adhoc-close-icon-img {
+  width: 18px;
+  height: 18px;
+}
+.adhoc-note-title {
+  font-weight: 700;
+  font-size: 17px;
+  margin-bottom: 0;
+  color: #111827;
+}
+.adhoc-note-list {
+  font-size: 14px;
+  line-height: 1.3;
+  color: #606060;
+  margin: 0;
+  padding: 0;
+}
+.adhoc-note-list li {
+  margin-bottom: 4px;
+  list-style: disc inside;
+}
+
+/* --- Employee Layout and Form Styles --- */
+.employee-container {
+  background: #f9fafb;
+  padding: 28px 32px 24px 32px;
+  border-radius: 16px;
+  min-width: 900px;
+  margin: 16px auto;
+  font-family: 'Inter', sans-serif;
+}
+.employee-main {
+  display: flex;
+  gap: 44px;
+  align-items: flex-start;
+}
+.employee-left {
+  flex: 2;
+}
+.employee-right {
+  flex: 1.2;
+  min-width: 340px;
+  max-width: 420px;
+  margin-top: 0px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+.form-section {
+  margin-bottom: 36px;
+}
+.section-label {
+  font-weight: 700;
+  font-size: 17px;
+  color: #111827;
+  margin-bottom: 16px;
+  display: block;
+}
+.input-label {
+  font-weight: 700;
+  font-size: 15px;
+  color: #111827;
+  margin-bottom: 10px;
+  display: block;
+}
+.required-star {
+  color: #F44336;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 2px;
+}
+.custom-radio-row {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-top: 4px;
+}
+.custom-radio-input {
+  display: none;
+}
+.custom-radio-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 8px;
+}
+.custom-radio-circle {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #bdbdbd;
+  border-radius: 50%;
+  background: #fff;
+  position: relative;
+  transition: border-color 0.2s;
+}
+.custom-radio-circle-selected {
+  border-color: #29ABE2;
+}
+.custom-radio-circle-selected::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #29ABE2;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.custom-radio-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #8d9096;
+  transition: color 0.2s, font-weight 0.2s;
+}
+.custom-radio-label-selected .custom-radio-text {
+  color: #111827;
+  font-weight: 700;
+}
+.custom-radio-label:hover .custom-radio-circle {
+  border-color: #29ABE2;
+}
+.project-input {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 850px;
+  height: 48px;
+  background-color: #ffffff;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 16px;
+  color: #111827;
+}
+.project-input .MuiOutlinedInput-notchedOutline {
+  border: none;
+}
+.project-input .MuiSelect-select,
+.project-input .MuiInputBase-input {
+  padding: 12px 16px;
+  background-color: transparent;
+  font-size: 16px;
+  color: #111827;
+  line-height: 1.5;
+}
+.reason-input-weekend {
+  box-sizing: border-box;
+  width: 1400px !important;
+  height: 90px;
+  background: #FFFFFF;
+  border: 0.5px solid #D0D5DD;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #111827;
+  padding: 20px 16px !important;
+  display: block;
+  align-items: unset;
+  justify-content: unset;
+  line-height: 1.5;
+}
+.reason-input {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 16px 16px;
+  gap: 12px;
+  width: 1400px !important;
+  height: 90px;
+  background: #FFFFFF;
+  border: 0.5px solid #D0D5DD;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #111827;
+}
+.reason-input .MuiInputBase-input,
+.reason-input .MuiOutlinedInput-input {
+  background: #fff;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #111827;
+  height: 58px;
+  padding: 16px;
+  box-sizing: border-box;
+}
+.comment-input {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1400px; /* Increase width! Adjust as needed */
+  height: 90px;
+  background: #FFFFFF;
+  border: 0.5px solid #D0D5DD;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #111827;
+  padding: 20px 16px !important;
+  display: block;
+  align-items: unset;
+  justify-content: unset;
+  line-height: 1.5;
+}
+.booking-details-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 18px;
+  flex-wrap: nowrap;
+}
+
+.booking-col {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.input-base-multiline {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 16px 16px;
+  gap: 12px;
+  width: 1332px;
+  height: 90px;
+  background: #FFFFFF;
+  border: 0.5px solid #D0D5DD;
+  border-radius: 6px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+.input-select .MuiSelect-select,
+.input-select .MuiInputBase-root,
+.input-select .MuiOutlinedInput-input {
+  background: #ffffff !important;
+  border-radius: 6px !important;
+  box-sizing: border-box;
+}
+.input-select .MuiOutlinedInput-notchedOutline {
+  border-color: #E5E7EB !important;
+  border-radius: 6px !important;
+}
+.input-select {
+  background: #ffffff !important;
+  border-radius: 6px !important;
+}
+.cab-timing-input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.cab-timing-input {
+  padding-right: 40px;
+  background: #fff !important;
+  box-shadow: none !important;
+}
+.cab-timing-clock-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 22px;
+  height: 22px;
+  pointer-events: none;
+}
+.submit-btn-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+.submit-btn {
+  background: #29ABE2 !important;
+  color: #fff !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  min-width: 100px !important;
+  height: 40px !important;
+  text-transform: none !important;
+  box-shadow: none !important;
+  margin-bottom: 10px !important;
+  right: -500px;
+}
+.contact-details-row {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 18px;
+}
+.discover-checkbox-row {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+}
+.discover-checkbox {
+  margin-right: 8px !important;
+  color: #2596FF !important;
+}
+.discover-checkbox-label {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.45;
+  letter-spacing: -0.005em;
+  color: #2596FF;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.MuiOutlinedInput-root,
+.MuiInputBase-root {
+  background: #ffffff !important;
+  box-shadow: none !important;
+}
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #E5E7EB !important;
+  background: #ffffff !important;
+  box-shadow: none !important;
+}
+.calendar-icon, .cab-time-icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.reason-input-adhoc {
+  box-sizing: border-box;
+  width: 1400px !important;
+  height: 90px;
+  background: #ffffff !important;
+  border: 0.5px solid #D0D5DD;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #111827;
+  padding: 20px 16px !important;
+  display: block;
+  align-items: unset;
+  justify-content: unset;
+  line-height: 1.5;
+}
+/* Scoped fix: Only style Employee's Reason and Comment fields */
+.employee-left .reason-input,
+.employee-left .reason-input-adhoc,
+.employee-left .reason-input-weekend,
+.employee-left .comment-input {
+  background: #ffffff !important;
+  border: 1px solid #D0D5DD !important;
+  border-radius: 8px !important;
+  color: #111827 !important;
+  box-shadow: none !important;
+}
+
+/* For inner textarea/input in Employee only */
+.employee-left .reason-input textarea,
+.employee-left .reason-input-adhoc textarea,
+.employee-left .reason-input-weekend textarea,
+.employee-left .comment-input textarea,
+.employee-left .reason-input .MuiInputBase-input,
+.employee-left .reason-input-adhoc .MuiInputBase-input,
+.employee-left .reason-input-weekend .MuiInputBase-input,
+.employee-left .comment-input .MuiInputBase-input,
+.employee-left .reason-input .MuiOutlinedInput-input,
+.employee-left .reason-input-adhoc .MuiOutlinedInput-input,
+.employee-left .reason-input-weekend .MuiOutlinedInput-input,
+.employee-left .comment-input .MuiOutlinedInput-input {
+  background: #fff !important;
+  color: #111827 !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+  border: none !important;
+  font-size: 16px !important;
+}
+
+/* Remove pill/grey look for MUI multiline in Employee only */
+.employee-left .MuiInputBase-root.MuiInputBase-multiline,
+.employee-left .MuiInputBase-input.MuiInputBase-inputMultiline,
+.employee-left .MuiOutlinedInput-input.MuiOutlinedInput-inputMultiline,
+.employee-left .comment-input .MuiInputBase-root,
+.employee-left .comment-input .MuiInputBase-input,
+.employee-left .comment-input .MuiOutlinedInput-input {
+  background: #fff !important;
+  box-shadow: none !important;
+  border-radius: 8px !important;
+  border: none !important;
+  width:1400px;
+}
+
+/* Remove outline on focus for clean look */
+.employee-left .reason-input textarea:focus,
+.employee-left .reason-input-adhoc textarea:focus,
+.employee-left .reason-input-weekend textarea:focus,
+.employee-left .comment-input textarea:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Remove autofill color in Employee only */
+.employee-left .comment-input input:-webkit-autofill,
+.employee-left .comment-input textarea:-webkit-autofill,
+.employee-left .reason-input input:-webkit-autofill,
+.employee-left .reason-input textarea:-webkit-autofill,
+.employee-left .reason-input-adhoc input:-webkit-autofill,
+.employee-left .reason-input-adhoc textarea:-webkit-autofill,
+.employee-left .reason-input-weekend input:-webkit-autofill,
+.employee-left .reason-input-weekend textarea:-webkit-autofill {
+  background: #fff !important;
+  -webkit-box-shadow: 0 0 0 1000px #fff inset !important;
+  color: #111827 !important;
+}
+/* Only affect inputs inside Employee state */
+.employee-left .input-base,
+.employee-left .input-base input,
+.employee-left .input-base .MuiInputBase-input,
+.employee-left .input-base .MuiOutlinedInput-input {
+  background: #fff !important;
+  
+}
+
+/* Also fix autofill for Employee only */
+.employee-left .input-base input:-webkit-autofill {
+  background: #fff !important;
+  -webkit-box-shadow: 0 0 0 1000px #fff inset !important;
+  color: #111827 !important;
+}
+
+/* --- Cab Required By Pills --- */
+.cab-required-row {
+  display: flex;
+  width: 100%;
+  gap: 10px !important; /* even more pronounced gap for image 4, adjust as needed */
+  background: #fff; /* ensures the row background is white */
+  padding: 0;
+}
+
+.cab-date-input .MuiOutlinedInput-root,
+.cab-time-input .MuiOutlinedInput-root {
+  flex: 1 1 0;
+  min-width: 0;
+  font-size: 17px;
+  color: #111827;
+  height: 56px;
+  border: 1px solid #E5E7EB;
+  background: #fff !important;
+  box-sizing: border-box;
+  border-radius: 0; /* reset, pill effect added below */
+  padding: 0 20px;
+  outline: none;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+}
+
+.cab-date-input .MuiOutlinedInput-root {
+  border-right: none;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.cab-time-input .MuiOutlinedInput-root {
+  border-left: none;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.cab-date-input .MuiOutlinedInput-notchedOutline,
+.cab-time-input .MuiOutlinedInput-notchedOutline {
+  border: none !important;
+  background: transparent !important;
+}
+
+.cab-date-input .MuiInputBase-input,
+.cab-time-input .MuiInputBase-input {
+  background: transparent !important;
+  color: #111827 !important;
+  font-size: 17px !important;
+  padding: 0 !important;
+}
+
+/* Icon styling */
+.cab-date-icon,
+.cab-time-icon {
+  width: 22px;
+  height: 22px;
+  margin-left: 8px;
+  opacity: 0.7;
+}
