@@ -1,0 +1,424 @@
+.employee-outer-container {
+  background: #f9fafb;
+  padding: 32px 36px 32px 36px;
+  border-radius: 16px;
+  min-width: 900px;
+  max-width: 1400px;
+  margin: 24px auto;
+  font-family: 'Inter', sans-serif;
+}
+
+.employee-main-row {
+  display: flex;
+  gap: 52px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.employee-left {
+  flex: 2;
+  min-width: 600px;
+  max-width: 900px;
+}
+
+.employee-right {
+  flex: 1.2;
+  min-width: 340px;
+  max-width: 420px;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+/* Location and Booking Details */
+.booking-details-row-two-cols {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 22px;
+  flex-wrap: nowrap;
+}
+
+.booking-col {
+  flex: 1;
+  min-width: 0;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.distance-input-group {
+  display: flex;
+  align-items: center;
+}
+.distance-svg-icon {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  left: -30px; /* Moves the icon 8px to the left */
+  opacity: 0.7;
+}
+
+.calendar-svg-icon, .clock-svg-icon {
+  width: 22px !important;
+  height: 22px !important;
+  color: #6C768B !important;
+  opacity: 0.7;
+  margin-right: 8px !important;
+  margin-left: 8px !important;
+}
+
+/* Note and Quote Section - blue border, rounded, shadow */
+.quote-section {
+  background: #fff;
+  border: 2px solid #29ABE2;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(31,54,199,0.11);
+  padding: 16px 10px 16px 10px;
+  margin-bottom: 8px;
+  position: absolute;
+  top:440px;
+}
+
+.quote-header {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 8px;
+}
+
+.info-svg-icon {
+  width: 26px;
+  height: 26px;
+  vertical-align: middle;
+  margin-right: 2px;
+  color: #29ABE2;
+  opacity: 0.9;
+  float: right; /* Move the icon to the right */
+}
+
+
+.quote-title {
+width: 97px;
+height: 23px;
+font-family: 'Samsung InterFace';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 145%;
+color: #000000;
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 0;
+  margin-left: -40px;
+}
+
+
+/* Quote Note - blue text, left margin for bullet */
+.quote-note {
+  font-size: 14px;
+  color: #0b0b0b;
+  margin-bottom: 8px;
+  margin-left: 10px;
+  background: #ffffff;
+  border: 1px solid #e3f0fb;
+  border-radius: 8px;
+  padding: 10px 14px 10px 14px;
+  position: relative;
+}
+
+.quote-note-title {
+  font-weight: 700;
+  color: #000000;
+}
+
+.quote-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.quote-table th,
+.quote-table td {
+  border: 1px solid #E5E7EB;
+  padding: 8px 12px;
+  text-align: left;
+  background: #fff;
+}
+
+.quote-table th {
+  background: #f3f9ff;
+  color: #29ABE2;
+  font-weight: 600;
+}
+
+.quote-total-row td,
+.quote-total-cell {
+  font-weight: 700;
+  color: #29ABE2;
+  font-size: 15px;
+  background: #f3f9ff !important;
+}
+
+/* ATTACHMENT SECTION */
+.attachment-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 10px;
+}
+.attach-input-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.attach-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.attach-svg-icon {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  margin-right: 7px;
+  opacity: 0.8;
+}
+.attach-note {
+  font-size: 13px;
+  color: #999;
+  margin-left: 8px;
+  font-weight: normal;
+}
+.attach-btn {
+  background: #fff !important;
+  color: #29ABE2 !important;
+  border: 1.5px solid #29ABE2 !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+  min-width: 70px !important;
+  height: 32px !important;
+  margin-left: 12px !important;
+  text-transform: none !important;
+  box-shadow: none !important;
+}
+.pdf-preview {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #f6f8fb;
+  border: 1px dashed #BDBDBD;
+  border-radius: 8px;
+  padding: 8px 16px;
+  min-width: 180px;
+}
+.pdf-svg-icon {
+  width: 26px;
+  height: 26px;
+  vertical-align: middle;
+  margin-right: 6px;
+  opacity: 0.95;
+}
+.pdf-label {
+  font-weight: 700;
+  font-size: 16px;
+  color: #ff5722;
+}
+.pdf-meta {
+  font-size: 12px;
+  color: #666;
+  margin-left: 5px;
+}
+.pdf-download-btn {
+  margin-left: 4px;
+  padding: 0;
+}
+.download-svg-icon {
+  width: 22px;
+  height: 22px;
+  opacity: 0.7;
+}
+
+.calculate-btn,
+.send-quote-btn{
+  /* Frame 1321314577 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 20px;
+
+position: absolute;
+width: 150px;
+height: 38px;
+right:-390px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+z-index: 0;
+
+}
+/* Contact / Approval / Comments / Buttons */
+.approval-checkbox-row {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+  margin-bottom: 0;
+}
+.approval-checkbox-label {
+  font-size: 15px;
+  color: #111827;
+  font-weight: 500;
+  margin-left: 8px;
+}
+.comment-input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 90px;
+  background: #fff;
+  border: 1px solid #D0D5DD;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #111827;
+  padding: 20px 16px !important;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.submit-btn-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-top: 8px;
+}
+.submit-btn {
+  background: #29ABE2 !important;
+  color: #fff !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  min-width: 120px !important;
+  height: 40px !important;
+  text-transform: none !important;
+  box-shadow: none !important;
+}
+.cancel-btn {
+  background: #fff !important;
+  color: #29ABE2 !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  min-width: 120px !important;
+  height: 40px !important;
+  text-transform: none !important;
+  box-shadow: none !important;
+  border: 1.5px solid #29ABE2 !important;
+  right:-500px;
+}
+
+/* Note Section Pin */
+.note-pin-container {
+  position: relative;
+  width: 100%;
+  height: 40px;
+}
+.note-pin-btn {
+  padding: 7px;
+  position: absolute;
+  right: -380px;
+  top: -35px;
+  z-index: 10;
+  cursor: pointer;
+}
+.note-pin-svg-icon {
+  width: 30px;
+  height: 30px;
+  opacity: 0.9;
+  
+}
+
+/* Note Section */
+.note-section {
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 10px;
+gap: 8px;
+isolation: isolate;
+position: absolute;
+width: 521px;
+height: 420px;
+left: -78px;
+top: 10px;
+background: #FFFFFF;
+border: 1px solid #E5E7EB;
+box-shadow: 0px 4px 7px rgba(31, 54, 199, 0.06);
+border-radius: 8px;
+
+}
+
+.close-svg-btn {
+  position: absolute;
+  top: -10px;
+  right: -450px;
+  background: none !important;
+  border: none !important;
+  padding: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+.close-svg-icon {
+  width: 18px;
+  height: 18px;
+  opacity: 0.7;
+}
+
+.note-header {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 8px;
+}
+
+.note-title {
+  font-weight: 700;
+  font-size: 16px;
+  color: #050506;
+ 
+}
+
+.note-list {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #161616;
+  margin: 0;
+  padding-left: 30px;
+
+}
+.note-list li {
+  margin-bottom: 6px;
+  list-style-type: disc;
+}
+.time-input,
+.date-input{
+  background-color: #ffffff;
+}
+.location-svg-icon{
+   width: 26px;
+  height: 26px;
+  position: relative;
+  left: 290px; /* Moves the icon 290px to the left */
+  opacity: 0.7;
+}

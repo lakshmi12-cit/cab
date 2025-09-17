@@ -1,0 +1,529 @@
+/* Container stays centered and wide */
+.rm-pm-container { 
+  background: #f9fafb;
+  padding: 28px 32px 24px 32px;
+  border-radius: 16px;
+  min-width: 900px;
+  margin: 16px auto;
+  font-family: 'Inter', sans-serif;
+  }
+
+/* Main form content hugs the left */
+.rm-pm-main { 
+   margin-left: 0;
+   margin-right: auto;
+   display: flex; 
+  flex-direction: column; 
+  align-items: flex-start; }
+
+/* Form sections and labels */
+.form-section {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.section-label {
+  font-weight: 700;
+  font-size: 16px;
+  color: #111827;
+  margin-bottom: 12px;
+  display: block;
+  text-align: left;
+}
+
+.input-label {
+  font-weight: 700;
+  font-size: 14px;
+  color: #111827;
+  margin-bottom: 8px;
+  display: block;
+  text-align: left;
+}
+
+/* === ADDED FOR DYNAMIC BOLD FIELDS === */
+.bold-label {
+  font-weight: 700 !important;
+  color: #232e3e !important;
+}
+.trip-schedule-label.bold-label {
+  font-weight: 700 !important;
+  color: #232e3e !important;
+}
+/* ============================ */
+
+.required-star {
+  color: #F44336;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 2px;
+}
+
+/* Radio group */
+.custom-radio-row {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-top: 4px;
+}
+
+/* Booking/details rows: 2 columns per row, hugging left */
+.booking-details-row,
+.contact-details-row {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 16px;
+  flex-wrap: nowrap;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* Each column: fixed width for proper placement */
+.booking-col {
+  flex: 1;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Inputs and selects */
+.project-input,
+.input-base,
+.cab-timing-input,
+.input-select .MuiSelect-select,
+.input-select .MuiInputBase-input,
+.input-select .MuiOutlinedInput-input,
+.reason-input,
+.comment-input {
+  background-color: #ffffff !important;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+  background: #ffffff;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  padding: 12px 14px;
+  height: 48px;
+  margin-bottom: 0;
+  display: block;
+}
+
+.input-select {
+  background: #ffffff !important;
+  border-radius: 8px !important;
+}
+.input-select .MuiOutlinedInput-notchedOutline {
+  border-color: #E5E7EB !important;
+  border-radius: 8px !important;
+}
+
+/* Trip schedule row: 3 columns */
+/* Transport Details Row: 3 columns in a row */
+.transport-details-row {
+  display: flex;
+  width: 100%;
+  gap: 24px;
+  margin-bottom: 18px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* Each field in the transport row */
+.transport-col {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: none;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label styling */
+.input-label {
+  font-weight: 700;
+  font-size: 15px;
+  color: #1A253C;
+  margin-bottom: 8px;
+  display: block;
+  text-align: left;
+}
+
+/* Standard input styling for all fields */
+.input-base,
+.project-input {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  background: #ffffff;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 16px 16px;
+  height: 56px;
+  color: #1A253C;
+  outline: none;
+  box-shadow: none;
+  display: block;
+}
+
+/* Trip Schedule (date+time) wrapper column */
+.transport-col.trip-schedule-wrapper {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Trip Schedule for label */
+.trip-schedule-label {
+  font-weight: 700;
+  font-size: 15px;
+  color: #1A253C;
+  margin-bottom: 8px;
+  display: block;
+  text-align: left;
+}
+.trip-schedule-row {
+  display: flex;
+  width: 100%;
+  gap: 12px; 
+  justify-content: space-between;/* Remove gap between inputs */
+}
+/* Date input: only rounded on left, no right border */
+.trip-date-input,
+.trip-time-input {
+  background: #ffffff !important;
+  border: 1px solid #E5E7EB !important;
+  border-radius: 8px !important;
+  font-size: 16px !important;
+  color: #111827 !important;
+  width: 210px !important;
+  height: 53px !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+}
+
+.trip-date-input .MuiInputBase-root,
+.trip-time-input .MuiInputBase-root {
+  border: none; /* Ensure no borders */
+  background: transparent; /* Remove any background color */
+}
+.trip-date-input .MuiOutlinedInput-root,
+.trip-time-input .MuiOutlinedInput-root {
+  border: none; /* Remove the outer border */
+  box-shadow: none; /* Remove any shadow */
+  background: transparent; /* Ensure no background color */
+  padding: 0; /* Remove padding to avoid the inner box */
+}
+
+.trip-date-input .MuiInputBase-input,
+.trip-time-input .MuiInputBase-input {
+  background: #ffffff !important;
+  color: #1A253C !important;
+  font-size: 16px !important;
+  font-family: 'Inter', sans-serif !important;
+  padding: 1px 16px !important;
+  height: 56px !important;
+  box-shadow: none !important;
+  border-radius: 8 !important;
+  display: flex !important;
+  align-items: center !important;
+}
+.trip-date-input .MuiOutlinedInput-notchedOutline,
+.trip-time-input .MuiOutlinedInput-notchedOutline {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+/* Picker icons (calendar and time) */
+.trip-date-input .MuiSvgIcon-root,
+.trip-time-input .MuiSvgIcon-root {
+  color: #6C768B !important;
+  font-size: 22px !important;
+  margin-right: 8px !important;
+  margin-left: 8px !important;
+  
+}
+/* For custom calendar icon images */
+.trip-date-input .calendar-icon,
+.trip-time-input .calendar-icon {
+  width: 22px !important;
+  height: 22px !important;
+  filter: grayscale(50%);
+  margin-right: 8px !important;
+  margin-left: 8px !important;
+}
+
+/* Remove any extra margin between the two inputs */
+.trip-date-input + .trip-time-input {
+  margin-left: 0 !important;
+}
+
+
+/* Redirect to PM row: 2 columns, left aligned */
+.redirect-pm-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+  width: 100%;
+}
+
+.redirect-checkbox {
+  margin-right: 8px;
+  color: #2596FF !important;
+}
+
+.redirect-checkbox-label {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.45;
+  letter-spacing: -0.005em;
+  color: #2596FF;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+/* Project and Transfer to PM row: project input stretches, button on right */
+.pm-project-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.pm-project-col {
+  flex: 1 1 auto;
+}
+
+.transfer-pm-btn {
+  height: 40px !important;
+  font-size: 15px !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  box-shadow: none !important;
+  margin-left: 12px;
+  color: #2596FF !important;
+}
+
+/* Reason & Comment: full width input */
+.reason-input
+{
+  box-sizing: border-box;
+  width: 10px;
+  height: 100px;
+  background: #ffffff;
+  border: 1px solid #D0D5DD;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #111827;
+  padding: 16px;
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+
+.comment-input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100px;
+  background: #ffffff;
+  border: 1px solid #D0D5DD;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #111827;
+  padding: 16px;
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+/* Remove underline from links inside comment-input */
+.comment-input a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+/* Action buttons row */
+.submit-btn-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+  gap: 12px;
+  width: 100%;
+}
+
+.reject-btn {
+  background: #ffffff !important;
+  color: #29ABE2 !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  min-width: 100px !important;
+  height: 40px !important;
+  text-transform: none !important;
+  box-shadow: none !important;
+  border: 1px solid #29ABE2 !important;
+}
+
+.approval-btn {
+  background: #29ABE2 !important;
+  color: #fff !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  min-width: 100px !important;
+  height: 40px !important;
+  text-transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Transfer Workflow Section */
+.transfer-workflow-section {
+  background: #EFF6FF;
+  border-radius: 8px;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 46px;
+  box-sizing: border-box;
+  margin-top: 36px;
+  margin-bottom: 0;
+  position: static;
+}
+
+.transfer-workflow-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.transfer-workflow-icon {
+  width: 22px;
+  height: 22px;
+}
+.transfer-workflow-title {
+  font-weight: 700;
+  font-size: 16px;
+  color: #020202;
+}
+.transfer-arrow-btn,
+.MuiIconButton-root.transfer-arrow-btn {
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  min-width: 0 !important;
+  width: auto !important;
+  height: auto !important;
+  display: inline-flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.transfer-arrow-btn {
+  background: none !important;
+  min-width: 0 !important;
+  margin-left: auto;
+}
+.transfer-arrow-icon {
+  font-size: 22px !important;   /* match the smaller arrow from your 2nd img */
+  color: #111827 !important;    /* dark grey/black */
+  font-weight: 500 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: none !important;
+}
+
+
+
+/* For the policies row at the bottom */
+.policies-row {
+  width: 100%;
+  padding: 24px 32px;
+  color: #232323;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  background: transparent;
+  border-radius: 0 0 16px 16px;
+  margin-top: 0;
+  gap: 8px;
+}
+
+.policies-row .policies-icon {
+  margin-right: 8px;
+  font-size: 24px;
+}
+.cab-timing-row {
+  width: 100%;
+  position: relative;
+  margin-bottom: 18px;
+}
+
+.cab-timing-input {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  background: #ffffff;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 16px 44px 16px 16px; /* right padding for icon */
+  height: 48px;
+  color: #1A253C;
+  outline: none;
+  box-shadow: none;
+  display: block;
+}
+
+.cab-timing-row .clock-icon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 22px;
+  height: 22px;
+  pointer-events: none;
+  color: #6C768B;
+  opacity: 0.8;
+}
+/* 🚀 Remove inner MUI box from DatePicker + TimePicker */
+.MuiOutlinedInput-root {
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border: none !important;
+}
+.project-input {
+  background: #ffffff !important;
+  border: 1px solid #E5E7EB !important;
+  border-radius: 8px !important;
+  padding: 0 !important;
+  font-size: 16px !important;
+  color: #1A253C !important;
+  min-height: 48px !important;
+  box-sizing: border-box;
+  margin-bottom: 0;
+}
+
+.project-input .MuiSelect-select {
+  background: #ffffff !important;
+  color: #1A253C !important;
+  font-size: 16px !important;
+  padding: 14px 16px !important;
+  border-radius: 8px !important;
+}
+.mobile-note-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.mobile-note-text {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}

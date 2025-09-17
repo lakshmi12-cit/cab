@@ -1,0 +1,292 @@
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.layout-content {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 8px 24px;
+}
+
+.layout-breadcrumb {
+  color: #6b7280;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.layout-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 1px 2px rgba(16, 30, 115, 0.04);
+}
+
+.layout-title-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.layout-back-button {
+  margin-right: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.layout-back-icon {
+  width: 24px;
+  height: 24px;
+  transform: rotate(180deg);
+}
+
+.layout-title-bold {
+  font-size: 24px !important;
+  font-weight: 1000 !important;
+  color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.layout-subtitle-bold {
+  font-weight: 800 !important;
+  color: #1a1a1a;
+}
+
+
+.layout-clock-container {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.layout-clock-icon {
+  width: 26px;
+  height: 26px;
+  color: #00b0ff;
+}
+
+.layout-state-navigation {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.layout-state-button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: none;
+  color: #6b7280;
+  background-color: #f3f4f6;
+  border: 1px solid #e5e7eb;
+}
+
+.layout-state-button.active {
+  color: #ffffff;
+  background-color: #0ea5e9;
+  border: 1px solid #0ea5e9;
+}
+
+.layout-employee-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.layout-employee-profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 280px;
+}
+
+.layout-avatar-container {
+  position: relative;
+}
+
+.layout-avatar-bg {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  background-color: #4caf50;
+}
+
+.layout-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.layout-avatar-status {
+  position: absolute;
+  bottom: 2px;
+  right: 2px;
+  width: 12px;
+  height: 12px;
+  background-color: #eaf5ebff;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.layout-employee-name {
+  font-weight: 700;
+  font-size: 16px;
+  color: #111827;
+}
+
+.layout-employee-email {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.layout-divider {
+  margin: 0 16px;
+  align-self: stretch;
+  min-height: 44px;
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .layout-divider {
+    display: block;
+  }
+}
+
+.layout-divider::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: #e3e8ee;
+  margin-top: 4px;
+}
+
+.layout-employee-info {
+  min-width: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.layout-division {
+  flex: 1;
+  min-width: 300px;
+}
+
+.layout-label {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.layout-value {
+  font-weight: 700;
+  font-size: 16px;
+  color: #111827;
+}
+
+.layout-required-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.layout-required-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.layout-required-title {
+  font-weight: 600 !important; /* or bold */
+  font-size: 20px !important;
+  color: #111827;
+  margin-left: 8px;
+}
+
+
+.layout-view-policies {
+  margin-top: 8px;
+}
+
+.layout-policies-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #4B5563; /* Gray-600 from Tailwind (neutral tone) */
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.layout-policies-icon {
+  width: 24px;
+  height: 24px;
+  color: #4B5563;
+}
+
+.layout-policies-text {
+  color: #4B5563;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.layout-back-button {
+  transform: rotate(180deg);
+}
+
+.layout-employee-section {
+  gap: 40px;
+}
+
+.layout-divider {
+  min-height: 50px;
+}
+
+.layout-avatar-status {
+  background-color: #1b9e11;
+}
+
+.layout-employee-profile {
+  min-width: 300px;
+}
+.layout-dot-separator {
+  margin: 0 8px;
+  color: #6b7280;
+}
+
+.layout-employee-name {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  color: #111827;
+}
+
+.layout-bold {
+  font-weight: 600;
+  color: #111827;
+}
+.layout-employee-info-line {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.layout-info-text {
+  font-size: 14px;
+  color: #111827;
+  font-weight: 600;
+  line-height: 1.5;
+}

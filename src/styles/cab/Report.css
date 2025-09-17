@@ -1,0 +1,301 @@
+.report-container {
+   background: #f9fafb;
+  padding: 28px 32px 24px 32px;
+  border-radius: 16px;
+  min-width: 900px;
+  margin: 16px auto;
+  font-family: 'Inter', sans-serif;
+}
+.report-main {
+  margin-left: 0;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.form-section {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.section-label {
+  font-weight: 700;
+  font-size: 16px;
+  color: #111827;
+  margin-bottom: 12px;
+  display: block;
+  text-align: left;
+}
+.input-label {
+  font-weight: 700;
+  font-size: 14px;
+  color: #111827;
+  margin-bottom: 8px;
+  display: block;
+  text-align: left;
+}
+.bold-label {
+  font-weight: 700 !important;
+  color: #232e3e !important;
+}
+.required-star {
+  color: #F44336;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 2px;
+}
+.custom-radio-row {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-top: 4px;
+}
+.booking-details-row,
+.contact-details-row {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 16px;
+  flex-wrap: nowrap;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.booking-details-row.three-cols {
+  gap: 18px;
+}
+.booking-col {
+  flex: 1;
+  position: relative;
+  box-sizing: border-box;
+}
+.project-input,
+.input-base,
+.cab-timing-input,
+.input-select .MuiSelect-select,
+.input-select .MuiInputBase-input,
+.input-select .MuiOutlinedInput-input,
+.reason-input,
+.comment-input {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+  background:#EEEEEE;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  padding: 12px 14px;
+  height: 48px;
+  margin-bottom: 0;
+  display: block;
+}
+.input-select {
+  background: #EEEEEE !important;
+  border-radius: 8px !important;
+}
+.input-select .MuiOutlinedInput-notchedOutline {
+  border-color: #E5E7EB !important;
+  border-radius: 8px !important;
+}
+.transport-details-row {
+  display: flex;
+  width: 100%;
+  gap: 24px;
+  margin-bottom: 18px;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.transport-col {
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: none;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.input-base {
+  font-weight: 500;
+  font-size: 16px;
+  color: #EEEEEE;
+  background: #f5f8fa;
+}
+.comment-input {
+  box-sizing: border-box;
+  width: 100%;
+  background: #f5f8fa;
+  border: 1px solid #D0D5DD;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #111827;
+  padding: 16px;
+  line-height: 1.5;
+  margin-bottom: 18px;
+}
+.trip-schedule-row {
+  display: flex;
+  width: 100%;
+  gap: 12px;
+  justify-content: space-between;
+}
+.trip-date-input,
+.trip-time-input {
+  background: #ffffff !important;
+  border: 1px solid #E5E7EB !important;
+  border-radius: 8px !important;
+  font-size: 16px !important;
+  color: #111827 !important;
+  width: 210px !important;
+  height: 53px !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+}
+.calendar-icon,
+.clock-icon {
+  width: 22px !important;
+  height: 22px !important;
+  filter: grayscale(50%);
+  margin-right: 8px !important;
+  margin-left: 8px !important;
+}
+.report-note {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+.note-container {
+  position: relative; /* so the card positions relative to this box */
+  display: inline-block;
+}
+
+.note-icon-topright {
+  position: absolute; 
+  top: -220px; 
+  right: -1350px; 
+  width: 24px; 
+  height: 24px; 
+  object-fit: contain; 
+  cursor: pointer;
+}
+.note-card {
+ position: absolute; 
+ background: #ffffff; 
+ border: 1px solid #e4eaf2;
+  border-radius: 12px; 
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.04);
+  right: -1350px !important;
+  top: -190px !important;
+}
+
+.note-close-icon {
+  position: relative;
+  top: 8px;
+  right: -450px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.note-title {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.note-list {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 14px;
+  color: #444;
+}
+
+
+.warnings-input-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.warning-icon {
+  width: 20px;
+  height: 20px;
+}
+/* Add at the end of your file (or improve existing styles) */
+
+.custom-valuebox {
+  width: 100%;
+  height: 48px;
+  background: #EEEEEE;
+  border-radius: 8px;
+  border: none;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 0 18px 0 18px;
+  font-size: 16px;
+  color: #232e3e;
+  font-weight: 500;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.custom-valuebox span {
+  font-size: 16px;
+  color: #232e3e;
+  font-weight: 500;
+}
+
+.valuebox-icon {
+  width: 28px;
+  height: 28px;
+  opacity: 0.7;
+}
+
+/* ...retain the rest of your existing styles... */
+.input-base,
+.MuiInputBase-root,
+.MuiOutlinedInput-root,
+.MuiSelect-root,
+.MuiInputBase-input,
+.MuiOutlinedInput-input,
+.Mui-disabled, 
+.MuiInputBase-input.Mui-disabled,
+.MuiOutlinedInput-input.Mui-disabled {
+  background: #EEEEEE !important;
+  border-radius: 12px !important;
+}
+
+.custom-valuebox {
+  background: #EEEEEE !important;
+  border-radius: 12px;
+  border: none;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding: 0 18px 0 18px;
+  font-size: 16px;
+  color: #232e3e;
+  font-weight: 500;
+  justify-content: space-between;
+  gap: 8px;
+  height: 48px;
+}
+
+.valuebox-icon {
+  width: 28px;
+  height: 28px;
+  opacity: 0.7;
+}
+
+.custom-valuebox .note-text {
+  font-size: 13px;
+  color: #7E8B99;
+  margin-top: 2px;
+}
+
+/* For DatePicker and TimePicker popups */
+.MuiPaper-root .MuiMenuItem-root,
+.MuiPaper-root .MuiList-root {
+  background: #EEEEEE !important;
+}
