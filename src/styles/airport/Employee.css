@@ -1,0 +1,26 @@
+.employee-container { width: 100%; }
+.employee-main { display: flex; gap: 24px; }
+.employee-left { flex: 1; }
+.employee-right { width: 360px; }
+.form-section { margin-bottom: 18px; }
+.section-label { font-weight: 700; margin-bottom: 8px; }
+.input-label { font-size: 12px; color: #94a3b8; margin-bottom: 6px; }
+.booking-details-row { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+.booking-col { display: flex; flex-direction: column; }
+.input-base { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px 12px; }
+.input-select { background: #fff; }
+.submit-btn-row { display: flex; justify-content: flex-end; }
+.submit-btn { text-transform: none; }
+.comment-input { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px 12px; }
+.required-star { color: #ef4444; }
+.note-section { background: #fff; }
+.upload-row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+.attachment-row { display: inline-flex; align-items: center; gap: 12px; }
+.attach-label { display: inline-flex; align-items: center; gap: 12px; cursor: pointer; border: 1px dashed #cbd5e1; padding: 10px 12px; border-radius: 8px; background: #fff; }
+.attach-title { font-weight: 700; }
+.attach-sub { font-size: 12px; color: #64748b; }
+.ticket-chip { display: inline-flex; align-items: center; gap: 8px; border: 1px solid #e2e8f0; padding: 8px 10px; border-radius: 8px; background: #fff; }
+.ticket-chip-col { display: flex; flex-direction: column; }
+.ticket-chip-name { font-size: 12px; font-weight: 700; }
+.ticket-chip-meta { font-size: 11px; color: #64748b; }
+
